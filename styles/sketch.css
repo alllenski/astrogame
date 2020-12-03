@@ -1,0 +1,39 @@
+
+h2 {
+    text-align: center;
+}
+
+#presentation {
+    background-color: rgb(209, 199, 230);
+    display: flex;  
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 32px;
+    border-radius: 25px;
+    flex-direction: row;
+}
+
+#slide-holder {
+    background-color: rgb(187, 180, 233);
+    padding: 32px;
+    margin: 12px;
+    width: 420px;
+    height: 420px;
+    border-radius: 25px;
+    order: 1;
+    flex-grow: 2;
+    font-size: 24px;
+}
+
+#sketch-holder {
+    background-color: rgb(0, 0, 0);
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    width: 420px;
+    height: 420px;
+    border-radius: 25px;
+    order: 3;
+}
