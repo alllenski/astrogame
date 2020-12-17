@@ -6,8 +6,8 @@ class Player extends Entity {
     }
 
     update() {
-        this.x = lerp(this.x, mouseX, 0.05);
-        this.y = lerp(this.y, mouseY, 0.05);
+        this.x = constrain(lerp(this.x, mouseX, 0.05), 32, width - 32);
+        this.y = constrain(lerp(this.y, mouseY, 0.05), 32, height - 32);
     }
 
     draw() {

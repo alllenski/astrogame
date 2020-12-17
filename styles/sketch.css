@@ -37,3 +37,7 @@ h2 {
     border-radius: 25px;
     order: 3;
 }
+
+.active-reply {
+    color:white;
+}
