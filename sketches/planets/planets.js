@@ -59,7 +59,7 @@ let slides = [
     8</sup> in a vacuum. The speed of light defines how far light travelled in a certain perspective. <br><br> For example, the distance between the Earth and the Moon is 1.29 light seconds while the distance between the Earth \
     and the Sun is 8 light minutes.",
     "<h1>That's it!</h1><br> \
-    Thank you for playing and I hope you learned something useful."
+    <p>Thank you for playing and I hope you learned something useful."
 ];
 
 let currentSlide = 0;
@@ -139,8 +139,10 @@ function mouseClicked() {
 }
 
 function next() {
-    currentSlide++;
-    changeSlide();
+    if (currentSlide != 16) {
+        currentSlide++;
+        changeSlide();
+    }
 }
 
 function changeSlide() {
